@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Calculator app</title>
+
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bgColor">
+  <main>
+    <section class=" main-container main-container__theme1 ">
+      <section class="heading-container flex">
+        <h1 class="heading">calc</h1>
+        <div class="theme-container flex">
+          <p class="theme-text">theme</p>
+          <div class="theme-selecters">
+            <div class="selecters">
+              <span id="selector1">1</span>
+              <span id="selector2">2</span>
+              <span id="selector3">3</span>
+            </div>
+          <div class="toggle-bground">
+            <span class="toggle toggle-theme1"></span>
+          </div>
+        </div>
+      </section>
+      <section >
+        <div class="display-container display-container__theme1 ">
+          <div data-previous-operand class="previous-operand"></div>
+          <div data-current-operand class="current-operand"></div>
+        </div>
+      </section>
+      <section class="calculator-container ">
+        <div class="grid-column">
+          <button data-number  class="btn btn__theme1 ">7</button>
+          <button data-number class="btn btn__theme1 ">8</button>
+          <button data-number class="btn btn__theme1 ">9</button>
+          <button data-delete class="btn btn-del">DEL</button>
+        </div>
+        <div class="grid-column">
+          <button data-number class="btn btn__theme1 ">4</button>
+          <button data-number class="btn btn__theme1 ">5</button>
+          <button data-number class="btn btn__theme1 ">6</button>
+          <button data-operation class="btn btn__theme1 ">+</button>
+        </div>
+        <div class="grid-column">
+          <button data-number class="btn btn__theme1 ">1</button>
+          <button data-number class="btn btn__theme1 ">2</button>
+          <button data-number class="btn btn__theme1 ">3</button>
+          <button data-operation class="btn btn__theme1 ">-</button>
+        </div>
+        <div class="grid-column">
+          <button data-number class="btn btn__theme1 ">.</button>
+          <button data-number class="btn btn__theme1 ">0</button>
+          <button data-operation class="btn btn__theme1 ">/</button>
+          <button data-operation class="btn btn__theme1 ">x</button>
+        </div>
+        <div class="grid-bottom-column">
+          <button data-reset class="btn btn-reset">RESET</button>
+          <button data-equals class="btn btn-equal">=</button>
+       </div>
+     </section>
+    </section class="main-container">
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">bc464</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
